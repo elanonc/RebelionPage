@@ -1,0 +1,64 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+    --cinza: #222222;
+    --cinzaDois: #444444;
+    --tonal: #394264;
+    --azul: #252B42;
+    --azul-claro: #E1F4FF;
+}
+
+.main {
+    margin-inline: 230px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 681px;
+}
+
+.circle {
+    width: 420px;
+    height: 420px;
+    background-color: var(--vermelho);
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    /* Define a ordem de camada */
+}
+
+img {
+    width: 420px;
+    position: absolute;
+    top: 123px;
+    left: 241px;
+    z-index: 2;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.main-title {
+    width: 80%;
+    margin-bottom: 30px;
+
+    font-size: 6.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.highlight {
+    color: var(--vermelho);
+}
+
+.main .main-container p {
+    width: 75%;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 400;
+}

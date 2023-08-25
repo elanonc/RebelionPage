@@ -1,0 +1,54 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+    --cinza: #222222;
+    --cinzaDois: #444444;
+    --tonal: #394264;
+    --azul: #252B42;
+    --azul-claro: #E1F4FF;
+}
+
+body {
+    background: var(--azul-claro);
+    font-family: 'Inter', sans-serif;
+    color: var(--cinza);
+}
+
+.logo {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    letter-spacing: 0.1rem;
+}
+
+.nav a {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#Layer_1 {
+    fill: var(--vermelho);
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .login a {
+    margin-left: 50px;
+}
+
+.header {
+    margin-top: 20px;
+    margin-inline: 230px;
+}
+
+
