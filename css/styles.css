@@ -1,17 +1,20 @@
 :root {
     --vermelho: #e50914;
-    --preto: #141414;
-    --cinza: #222222;
+    --preto: #171717;
+    --preto2: #25282D;
+    --cinza: #2B2E35;
     --cinzaDois: #444444;
     --tonal: #394264;
     --azul: #252B42;
     --azul-claro: #E1F4FF;
+    --claro: #dcdcdc;
+    --cinza-branco: #f3f3f3;
 }
 
 body {
-    background: var(--azul-claro);
+    background: var(--preto2);
     font-family: 'Inter', sans-serif;
-    color: var(--cinza);
+    color: var(--cinza-branco);
 }
 
 .logo {

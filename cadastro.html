@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
 </head>
 
 <body>
@@ -33,7 +34,9 @@
                                     C68.934,295.968,4.95,227.283,7.42,145.986" />
                     </g>
                 </svg>
-                <h1>Rebel Aliance</h1>
+                <article>
+                    <h1>Rebel Aliance</h1>
+                </article>
             </a>
             <div class="login">
                 <a href="cadastro.html">Cadastre-se</a>
@@ -41,33 +44,109 @@
             </div>
         </nav>
     </header>
-    <form action="https://www.w3schools.com/action_page.php" method="get">
-        <label for="nome">Nome (máximo 15 caracteres):</label>
-        <input type="text" id="nome" name="nome" maxlength="15" required><br><br>
 
-        <label for="campo_leitura">Campo de Leitura:</label>
-        <input type="text" id="campo_leitura" name="campo_leitura" readonly
-            value="Este campo é apenas para leitura"><br><br>
+    <section id="signin-form">
+        <article class="form-section">
+            <form class="form" action="https://www.w3schools.com/action_page.php" method="get">
+                <h2>Formulário de Cadastro</h2>
 
-        <label for="numero">Número (entre 25000 e 30000):</label>
-        <input type="number" id="numero" name="numero" min="25000" max="30000" required><br><br>
+                <!-- Progress bar -->
+                <div class="progressbar">
+                    <div class="progress" id="progress"></div>
+                    <div class="progress-step progress-step-active" data-title="Início"></div>
+                    <div class="progress-step" data-title="Contato"></div>
+                    <div class="progress-step" data-title="Habilidades"></div>
+                    <div class="progress-step" data-title="Senha"></div>
+                </div>
+                <!-- Steps -->
+                <div class="form-step form-step-active">
+                    <div class="input-group">
+                        <label for="username">Nome</label>
+                        <input type="text" name="username" id="username" maxlength="15"/>
+                    </div>
+                    <div class="input-group">
+                        <label for="dob">Data de Nascimento</label>
+                        <input type="date" name="dob" id="dob" />
+                    </div>
+                    <div class="">
+                        <a href="#" class="btn btn-next">Próximo</a>
+                    </div>
+                </div>
 
-        <label>Gênero:</label>
-        <input type="radio" id="masculino" name="genero" value="masculino">
-        <label for="masculino">Masculino</label>
-        <input type="radio" id="feminino" name="genero" value="feminino">
-        <label for="feminino">Feminino</label><br><br>
+                <div class="form-step">
+                    <div class="input-group">
+                        <label for="phone">Telefone</label>
+                        <input type="text" name="phone" id="phone" />
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" />
+                    </div>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-prev">Anterior</a>
+                        <a href="#" class="btn btn-next">Próximo</a>
+                    </div>
+                </div>
 
-        <label for="interesses">Interesses:</label>
-        <input type="checkbox" id="esporte" name="interesses" value="esporte">
-        <label for="esporte">Esporte</label>
-        <input type="checkbox" id="musica" name="interesses" value="musica">
-        <label for="musica">Música</label>
-        <input type="checkbox" id="leitura" name="interesses" value="leitura">
-        <label for="leitura">Leitura</label><br><br>
+                <div class="form-step">
+                    <div class="input-group-b">
+                        <label for="experience">Sabe pilotar naves?</label>
+                        <div class="buttons-group">
+                            <input type="radio" name="experience" id="yes"  value="Sim">
+                            <label for="yes">Sim</label>
+                        </div>
+                        <div class="buttons-group">
+                            <input type="radio" name="experience" id="no"  value="Não">
+                            <label for="no">Não</label>
+                        </div>
+                    </div>
+                    <div class="input-group-b">
+                        <label for="weapons">Armas cujo domina:</label>
+                        <div class="buttons-group">
+                            <input type="checkbox" name="weapons" id="blaster"  value="blaster">
+                            <label for="blaster">Blaster</label>
+                        </div>
+                        <div class="buttons-group">
+                            <input type="checkbox" name="weapons" id="gaderffii"  value="gaderffii">
+                            <label for="gaderffii">Gaderffii</label>
+                        </div>
+                        <div class="buttons-group">
+                            <input type="checkbox" name="weapons" id="exposives"  value="exposives">
+                            <label for="exposives">Explosivos</label>
+                        </div>
+                        <div class="buttons-group">
+                            <input type="checkbox" name="weapons" id="lightsaber"  value="lightsaber">
+                            <label for="lightsaber">Sabre de Luz</label>
+                        </div>
+                        <div class="buttons-group">
+                            <input type="checkbox" name="weapons" id="none" value="none">
+                            <label for="none">Nenhuma</label>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-prev">Anterior</a>
+                        <a href="#" class="btn btn-next">Próximo</a>
+                    </div>
+                </div>
 
-        <input type="submit" value="Enviar">
-    </form>
+                <div class="form-step">
+                    <div class="input-group">
+                        <label for="password">Senha - um número entre 25000 e 30000:</label>
+                        <input type="number" id="password" name="password" min="25000" max="30000"/>
+                    </div>
+                    <div class="input-group">
+                        <label for="confirmPassword">Confirmar senha</label>
+                        <input type="number" id="password" name="password" min="25000" max="30000" />
+                    </div>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-prev">Anterior</a>
+
+                        <input type="submit" value="Submit" class="btn btn-submit">
+                    </div>
+                </div>
+            </form>
+        </article>
+    </section>
 </body>
 
 </html>
